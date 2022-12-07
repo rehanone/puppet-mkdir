@@ -17,7 +17,6 @@ define mkdir::p (
   Optional[Variant[Integer, String]] $group        = undef,
   Boolean                            $declare_file = false,
 ) {
-
   $use_title = "mkdir_p_${title}"
 
   anchor { "${use_title}__begin": }
@@ -29,7 +28,6 @@ define mkdir::p (
   }
 
   if !$declare_file {
-
     if $mode {
       $threedigitmode = inline_template('<%= @mode[1..-1] if @mode[0] == "0" %>')
       exec { "${use_title}_chmod__${mode}":
@@ -60,9 +58,7 @@ define mkdir::p (
         before  => Anchor["${use_title}__end"],
       }
     }
-
   } else {
-
     file { $path:
       ensure  => directory,
       owner   => $owner,
@@ -71,9 +67,6 @@ define mkdir::p (
       require => Exec[$use_title],
       before  => Anchor["${use_title}__end"],
     }
-
   }
-
   anchor { "${use_title}__end": }
-
 }

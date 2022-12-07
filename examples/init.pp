@@ -1,5 +1,4 @@
 node default {
-
   notify { 'before': }
   notify { 'after': }
 
