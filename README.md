@@ -1,8 +1,14 @@
-# mkdir::p
+# puppet-mkdir
+
+[![Build Status](https://travis-ci.com/rehanone/puppet-mkdir.svg?branch=master)](https://travis-ci.com/rehanone/puppet-mkdir)
+
+This module is a clone of [flypenguin/mkdir](https://forge.puppet.com/modules/flypenguin/mkdir/).
 
 Provides an `mkdir -p` implementation in pure puppet code, no functions.
 
-Some examples:
+## Sample Usage
+
+# mkdir::p
 
 ```
 mkdir::p { '/this/is/a/dir': }

@@ -1,12 +1,12 @@
 {
-  "name": "flypenguin-mkdir",
-  "version": "1.0.4",
-  "author": "Axel Bock <mr.axel.bock@gmail.com>",
+  "name": "rehan-mkdir",
+  "version": "2.0.0",
+  "author": "Rehan Mahmood",
   "summary": "Provides a useful mkdir::p define, works only on *nix, tested on Linux",
   "license": "MIT",
-  "source": "https://github.com/flypenguin/puppet-mkdir.git",
-  "project_page": "https://github.com/flypenguin/puppet-mkdir",
-  "issues_url": "https://github.com/flypenguin/puppet-mkdir/issues",
+  "source": "https://github.com/rehanone/puppet-mkdir.git",
+  "project_page": "https://github.com/rehanone/puppet-mkdir",
+  "issues_url": "https://github.com/rehanone/puppet-mkdir/issues",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
